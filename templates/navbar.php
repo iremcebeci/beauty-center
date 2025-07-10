@@ -36,6 +36,8 @@ include_once __DIR__ . '/../config.php';
   <ul>
     <li><a href="<?php echo BASE_URL; ?>/index.php">Ana Sayfa</a></li>
     <li><a href="<?php echo BASE_URL; ?>/services.php">Hizmetler</a></li>
+    <li><a href="<?php echo BASE_URL; ?>/blog.php">Blog</a></li>
+    <li><a href="<?php echo BASE_URL; ?>/gallery.php">Galeri</a></li>
     <li><a href="<?php echo BASE_URL; ?>/about.php">Hakkımızda</a></li>
     <li><a href="<?php echo BASE_URL; ?>/contact.php">İletişim</a></li>
     <li><a href="<?php echo BASE_URL; ?>/book_appointment.php">Randevu Al</a></li>

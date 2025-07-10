@@ -1,0 +1,13 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/assets/css"
+    }
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "**/_*.scss", // partial SCSS dosyalarını hariç tut
+    "**/*.map"    // map dosyalarını hariç tut
+  ]
+}

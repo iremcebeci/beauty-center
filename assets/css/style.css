@@ -132,4 +132,64 @@ a {
   padding-top: 15px;
   border-top: 1px solid #F7D9D9;
   color: #F7D9D9;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.services {
+  text-align: center;
+}
+.services .services-hero {
+  background: #F7D9D9;
+  color: white;
+  padding: 60px 20px;
+}
+.services .services-hero h1 {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #B76E79, #FF6B6B);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.services .services-hero p {
+  font-family: "Lato", sans-serif;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+.services .services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+}
+.services .service-card {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+}
+.services .service-card img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.services .service-card h3 {
+  font-family: "Playfair Display", serif;
+  margin: 15px;
+  color: #B76E79;
+}
+.services .service-card p {
+  margin: 0 15px 15px;
+  font-size: 0.95rem;
+}
+.services .service-card .button {
+  display: block;
+  margin: 15px;
+  background: #FF6B6B;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+.services .service-card .button:hover {
+  background: #B76E79;
+}/*# sourceMappingURL=style.css.map */
