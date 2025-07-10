@@ -1,0 +1,18 @@
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $ivory;
+  font-family: $font-base;
+  color: $dark-charcoal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

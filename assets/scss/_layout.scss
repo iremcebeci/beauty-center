@@ -1,0 +1,138 @@
+@import 'variables';
+@import 'mixins';
+
+.navbar {
+  padding: 10px 0;
+  background-color: white;
+  box-shadow: $shadow;
+  position: relative;
+  z-index: 100;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+
+  .nav-left, .nav-right {
+    width: 25vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-right {
+    justify-content: end;
+    padding-right: 20px;
+  }
+
+  .logo {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 60px;
+      vertical-align: middle;
+    }
+    span {
+      font-weight: bold;
+      font-size: 1.5em;
+      margin-left: 10px;
+    }
+  }
+
+  .nav-right a, .account-menu {
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+    font-family: $font-heading;
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin-top: 10px;
+    min-width: 150px;
+    z-index: 200;
+  }
+
+  .account-menu:hover .dropdown {
+    display: block;
+  }
+}
+
+.nav-menu {
+  background-color: $rose-gold;
+  border-top: 1px solid $soft-pink;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    gap: 30px;
+
+    li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+      font-family: $font-heading;
+
+      &:hover {
+        color: $soft-pink;
+      }
+    }
+  }
+}
+
+.site-footer {
+  background-color: $dark-charcoal;
+  color: white;
+  padding: 30px 20px 10px;
+  font-size: 14px;
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+
+    h3, h4 {
+      color: $rose-gold;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $soft-pink;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid $soft-pink;
+    color: $soft-pink;
+  }
+}
